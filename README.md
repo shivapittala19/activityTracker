@@ -90,7 +90,6 @@ Now, visit `http://127.0.0.1:8000/swagger/` to explore the API documentation.
 
 ```json
 
-Response body
 {
   "message": "Activity updated",
   "is_completed": true
