@@ -64,7 +64,7 @@ Now, visit `http://127.0.0.1:8000/swagger/` to explore the API documentation.
 ### 1. **User Progress** (Get activities for a given date range)
 
 - **Endpoint:** `GET /api/user_progress/`
-- **Params:** `start_date`, `end_date`
+- **Params:** `date`
 - **Response:**
 
 ```json
@@ -83,7 +83,7 @@ Now, visit `http://127.0.0.1:8000/swagger/` to explore the API documentation.
 ]
 ```
 
-### 2. **Mark Activity as Complete**
+### 2. **Toggle Activity**
 
 - **Endpoint:** `POST /api/mark_complete/{id}/`
 - **Response:**
@@ -95,7 +95,13 @@ Now, visit `http://127.0.0.1:8000/swagger/` to explore the API documentation.
   "is_completed": true
 }
 ```
+```json
 
+{
+  "message": "Activity updated",
+  "is_completed": false
+}
+```
 ---
 
 ## 🛠 Technologies Used
